@@ -1,11 +1,13 @@
 async function get(){
-    let res = await fetch('http://localhost:3000/leaderBoard')
+    console.log("hi");
+    let res = await fetch('/leaderBoard')
     let data = await res.json();
     return data.leaderBoard;
 }
 
 function post(score){
-    fetch('http://localhost:3000/leaderBoard',{
+    console.log("hi");
+    fetch('/leaderBoard',{
         method:'post',
         headers: {
             'Content-Type': 'application/json'
