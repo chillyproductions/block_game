@@ -57,7 +57,9 @@ function deathCheck(score){
         post(score);
         alert(score);
         location.href = './game.html';
+        
     }
+    return score + 20;
 }
 
 function startListening(){
@@ -67,9 +69,8 @@ function startListening(){
         rotate();
         showBoard();
         showPlayer();
-        deathCheck(score);
+        score = deathCheck(score);
         
-        score += 20;
         document.getElementById("score").innerHTML = "score: "+ score;
     }, 50);
 
