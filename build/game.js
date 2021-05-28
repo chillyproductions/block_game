@@ -1,6 +1,5 @@
 const size = 50;
 var gameLoop;
-var score = 0;
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -52,7 +51,7 @@ function clearBoard(){
     ctx.clearRect(0,0,boardArr[0].length * size,boardArr[0].length * size);
 }
 
-function deathCheck(){
+function deathCheck(score){
     if(boardArr[playerPos][1] == 1){
         clearInterval(gameLoop);
         post(score);
@@ -62,12 +61,13 @@ function deathCheck(){
 }
 
 function startListening(){
+    var score = 0;
     gameLoop = setInterval(() => {
         clearBoard();
         rotate();
         showBoard();
         showPlayer();
-        deathCheck();
+        deathCheck(score);
         
         score += 20;
         document.getElementById("score").innerHTML = "score: "+ score;
@@ -96,5 +96,4 @@ addEventListener('load', async()=>{
     else
         location.href = "./";
 })
-
 

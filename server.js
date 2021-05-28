@@ -4,12 +4,11 @@ const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 
-app.use(cors());
 const { json } = require('express');
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-app.use(express.static('build'))
+app.use(express.static('secureBuild'))
 
 app.get('/leaderBoard', (req,res)=>{
     var rawData = fs.readFileSync('./database.json');
