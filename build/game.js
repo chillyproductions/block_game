@@ -63,14 +63,14 @@ function deathCheck(score){
 }
 
 function startListening(){
-    var score = 0;
+    let score = 0;
     gameLoop = setInterval(() => {
         clearBoard();
         rotate();
         showBoard();
         showPlayer();
         score = deathCheck(score);
-        
+
         document.getElementById("score").innerHTML = "score: "+ score;
     }, 50);
 
