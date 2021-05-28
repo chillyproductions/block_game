@@ -10,7 +10,7 @@ function post(score){
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({name:"nuti", score:score})
+        body: JSON.stringify({name:localStorage.getItem("name"), score:score})
     })
 }
 
