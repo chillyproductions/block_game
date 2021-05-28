@@ -1,9 +1,24 @@
 {
-    "leaderBoard":[
-        {"name": "nuti the great", "score": 1000},
-        {"name": "nuti the great", "score": 999},
-        {"name": "nuti the great", "score": 998},
-        {"name": "nuti the great", "score": 997},
-        {"name": "nuti the great", "score": 996}
-    ]
+  "leaderBoard": [
+    {
+      "name": "nuti",
+      "score": 1000
+    },
+    {
+      "name": "nuti",
+      "score": 900
+    },
+    {
+      "name": "nuti",
+      "score": 800
+    },
+    {
+      "name": "nuti",
+      "score": 700
+    },
+    {
+      "name": "nuti",
+      "score": 600
+    }
+  ]
 }

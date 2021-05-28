@@ -55,7 +55,9 @@ function clearBoard(){
 function deathCheck(){
     if(boardArr[playerPos][1] == 1){
         clearInterval(gameLoop);
-        alert("you lost");
+        post(score);
+        alert(score);
+        location.href = './game.html';
     }
 }
 
@@ -87,20 +89,12 @@ function startListening(){
     })
 }
 
-function drawLeaderBoard(arr){
-    s = "";
-    console.log(arr);
-
-    for(score of arr){
-        s += `<div>${score.name}: ${score.score}</div>`
-    }
-
-    document.getElementById("leaderBoard").innerHTML = s;
-}
 
 addEventListener('load', async()=>{
-    drawLeaderBoard(get());
-    startListening();
+    if(localStorage.getItem("name"))
+        startListening();
+    else
+        location.href = "./";
 })
 
 
