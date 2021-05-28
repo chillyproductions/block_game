@@ -1,12 +1,10 @@
 async function get(){
-    console.log("hi");
     let res = await fetch('/leaderBoard')
     let data = await res.json();
     return data.leaderBoard;
 }
 
 function post(score){
-    console.log("hi");
     fetch('/leaderBoard',{
         method:'post',
         headers: {
