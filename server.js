@@ -23,9 +23,9 @@ app.post('/leaderBoard', (req, res)=>{
 
     for(var i = 0; i < leaderBoard.length; i++){
         if(req.body.score > leaderBoard[i].score){
-            for(let i2 = i; i2 < leaderBoard.length -1; i2++){
-                leaderBoard[i2] = leaderBoard[i2+1];
-            }
+            for(let i2 = leaderBoard.length -1; i2 > i; i2--)
+                leaderBoard[i2] = leaderBoard[i2-1];
+            
             leaderBoard[i] = req.body;
             break;
         }
