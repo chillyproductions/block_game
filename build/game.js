@@ -87,7 +87,7 @@ function startListening(){
             showBoard();
             showPlayer();
         }
-        else if(key.code == "Space"){
+        else if(key.key == " "){
             playerPos = Math.abs(playerPos-1);
             clearBoard();
             showBoard();
