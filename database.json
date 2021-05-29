@@ -2,7 +2,15 @@
   "leaderBoard": [
     {
       "name": "Kartiv",
+      "score": 58460
+    },
+    {
+      "name": "Kartiv",
       "score": 41300
+    },
+    {
+      "name": "Kartiv",
+      "score": 40820
     },
     {
       "name": "Kartiv",
@@ -14,31 +22,23 @@
     },
     {
       "name": "Kartiv",
+      "score": 31260
+    },
+    {
+      "name": "Kartiv",
       "score": 22460
     },
     {
       "name": "Kartiv",
+      "score": 22320
+    },
+    {
+      "name": "Kartiv",
+      "score": 20480
+    },
+    {
+      "name": "Kartiv",
       "score": 19920
-    },
-    {
-      "name": "nuti",
-      "score": 17200
-    },
-    {
-      "name": "nuti",
-      "score": 15140
-    },
-    {
-      "name": "nuti",
-      "score": 12000
-    },
-    {
-      "name": "nuti",
-      "score": 11320
-    },
-    {
-      "name": "blank",
-      "score": 0
     }
   ]
 }
